@@ -65,6 +65,12 @@ a{color:inherit;text-underline-offset:.23em}a:hover{text-decoration-thickness:2p
 <p>These readings are used at the moment they are taken. They are not stored, logged, added to a history, or sent to us or anyone else. Lumen does not read battery or charger information from other apps or devices.</p>
 <p>Only derived light frames are sent locally to the phone’s Glyph system service through the official Glyph SDK. Battery readings are not sent to that service; the frames describe which lights to show.</p>
 </section>
+<section id="legacy-v1" aria-labelledby="legacy-v1-title">
+<h2 id="legacy-v1-title">Earlier Lumen 1.x versions during the transition</h2>
+<p>The hub features described above and below apply to Lumen 2.0 and later. Earlier 1.x versions may remain installed or available on another Play track during the transition. Those versions offer music light shows, live microphone or phone-playback analysis and ringtone creation. Version 2 removes those features.</p>
+<p>In 1.x, microphone and permitted phone-playback audio is analysed locally in memory, not saved as an audio recording, transcribed or uploaded. Microphone access uses Android permission; phone-playback capture also requires the system capture-consent prompt. Android capture controls and Lumen's Stop control end that processing. Some media sources block capture. Audio settings access supports the local compatibility path and does not transmit audio.</p>
+<p>Older ringtone creation reads a user-selected file through Android's file picker and writes the result to shared <code>Ringtones/Lumen</code> storage. Special write-settings access is requested only when the user chooses to set a default ringtone. These files remain until manually deleted. Old presets and general settings may be included in Android-managed backup. The purchase and backup distinctions in this policy apply to those earlier versions too.</p>
+</section>
 <section id="notification-access" aria-labelledby="notification-access-title">
 <h2 id="notification-access-title">Notification lights, progress and timers</h2>
 <p>Notification access is optional. Before opening Android notification-access settings, Lumen explains its use and asks for consent. For notification rules it reads the originating app, title, text and sender on this phone to choose a light. Notification content is not stored, logged or sent to us. Rules you enter can contain app selections, sender names or keywords and are stored locally, excluded from Android backup and device transfer.</p>
